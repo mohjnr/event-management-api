@@ -28,6 +28,7 @@ This is a Node.js based RESTful API for managing events and participants.
 - dotenv for environment management
 
 ## Project Structure
+
 ```
 event-management-api/
 ├── src/
@@ -74,7 +75,6 @@ event-management-api/
 The application requires the following environment variables to be set in a `.env` file:
 
 - `MONGODB_URI`: MongoDB connection URI (e.g., `mongodb://localhost:27017/event_management`)
-- `PORT`: The port for the server to run on (e.g., `5000`)
 
 ## Usage
 
@@ -109,13 +109,29 @@ Use a tool like [Postman](https://www.postman.com/) to interact with the API. Be
 
 - **Register Participant for Event**
   - **POST** `/api/events/:id/register`
+- **Body**:
+  ```json
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "123-456-7890"
+  }
+  ```
 - **Get Available Spots for Event**
   - **GET** `/api/events/:id/spots`
 - **Cancel Participant Registration**
 
   - **POST** `/api/events/:id/cancel`
 
+  ```json
+  {
+  "email": "johndoe@example.com"
+  }
+
+
   ## Future Enhancements
+
+  ```
 
 - Add authentication and authorization to restrict access to certain endpoints.
 - Implement pagination for large lists of events.
