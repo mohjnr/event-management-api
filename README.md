@@ -70,7 +70,6 @@ event-management-api/
 
    # Server Port
    PORT=5000
-
    ```
 
 4. Start the server using npm start
