@@ -13,6 +13,7 @@ const eventSchema = new mongoose.Schema({
   location: { type: String, required: true },
   maxParticipants: { type: Number, required: true },
   participants: [participantSchema],
+  waitlist: [participantSchema],
 });
 
 eventSchema.virtual('availableSpots').get(function () {
