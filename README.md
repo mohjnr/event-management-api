@@ -138,7 +138,7 @@ Use a tool like [Postman](https://www.postman.com/) to interact with the API. Be
   }
   ```
 - ## Event Search and Filter
-- **Search Events**
+  **Search Events**
  -  **GET** `/api/events/search`
 
 ## Future Enhancements
