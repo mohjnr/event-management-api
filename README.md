@@ -28,8 +28,8 @@ This is a Node.js based RESTful API for managing events and participants.
 - dotenv for environment management
 
 ## Project Structure
-
-`event-management-api/
+```
+event-management-api/
 ├── src/
 │ ├── config/ # MongoDB connection configuration
 │ ├── controllers/ # Controller functions for events
@@ -39,7 +39,8 @@ This is a Node.js based RESTful API for managing events and participants.
 ├── .env # Environment variables
 ├── package.json # Project dependencies
 └── README.md # Project documentation
-`
+```
+
 ## Setup and Installation
 
 ### Prerequisites
