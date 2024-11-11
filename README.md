@@ -120,20 +120,20 @@ Use a tool like [Postman](https://www.postman.com/) to interact with the API. Be
 - **Get Available Spots for Event**
   - **GET** `/api/events/:id/spots`
 - **Cancel Participant Registration**
-
-  - **POST** `/api/events/:id/cancel`
+- **POST** `/api/events/:id/cancel`
 
   ```json
   {
-  "email": "johndoe@example.com"
+    "email": "johndoe@example.com"
   }
-
-
-  ## Future Enhancements
-
   ```
+
+## Future Enhancements
+
+```
 
 - Add authentication and authorization to restrict access to certain endpoints.
 - Implement pagination for large lists of events.
 - Add email notifications for participants when they register or cancel.
 - Enhance error handling and validation logic.
+```
