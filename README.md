@@ -29,7 +29,7 @@ This is a Node.js based RESTful API for managing events and participants.
 
 ## Project Structure
 
-event-management-api/
+`event-management-api/
 ├── src/
 │ ├── config/ # MongoDB connection configuration
 │ ├── controllers/ # Controller functions for events
@@ -39,7 +39,7 @@ event-management-api/
 ├── .env # Environment variables
 ├── package.json # Project dependencies
 └── README.md # Project documentation
-
+`
 ## Setup and Installation
 
 ### Prerequisites
