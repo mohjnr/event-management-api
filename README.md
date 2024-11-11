@@ -11,9 +11,9 @@ This is a Node.js based RESTful API for managing events and participants.
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-   -[Event Endpoints](#event-endpoints)
-   -[Participant and Waitlist Management](#participant-management)
-   -[Event Search](#event-search)
+-       [Event Endpoints](#event-endpoints)
+-       Participant and Waitlist Management](#participant-management)
+-      Event Search](#event-search)
 - [Future Enhancements](#future-enhancements)
 
 ## Features
