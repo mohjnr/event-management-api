@@ -61,7 +61,7 @@ event-management-api/
 
 2. Install dependency
    ```bash
-   -npm install
+   npm install
    ```
 
 3. Configure environment variables
@@ -79,7 +79,7 @@ event-management-api/
   
 4. Run the Server
    ```bash
-   -npm start
+   npm start
    ```
   The server will run on http://localhost:5000.
 
