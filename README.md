@@ -64,9 +64,14 @@ event-management-api/
 
 3. Configure environment variables
 
-- Create a .env file in the project root and add:
-  MONGODB_URI=mongodb://localhost:27017/event_management
-  PORT=5000
+   ```plaintext
+   # MongoDB connection URI
+   MONGODB_URI=mongodb://localhost:27017/event_management
+
+   # Server Port
+   PORT=5000
+
+   ```
 
 4. Start the server using npm start
 
