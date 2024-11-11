@@ -11,6 +11,9 @@ This is a Node.js based RESTful API for managing events and participants.
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+  -[Event Endpoints](#event-endpoints)
+  -[Participant and Waitlist Management](#participant-management)
+  -[Event Search](#event-search)
 - [Future Enhancements](#future-enhancements)
 
 ## Features
@@ -60,7 +63,9 @@ event-management-api/
    ```
 
 2. Install dependency
+   ```bash
    -npm install
+   ```
 
 3. Configure environment variables
 
@@ -70,15 +75,20 @@ event-management-api/
 
    # Server Port
    PORT=5000
-   ```
 
-4. Start the server using npm start
+   # JWT Secret Key
+   JWT_SECRET=your_jwt_secret_key
+   ```
+  
+4. Run the Server
+   ```bash
+   -npm start
+   ```
+  The server will run on http://localhost:5000.
 
 ## Environment Variables
 
-The application requires the following environment variables to be set in a `.env` file:
-
-- `MONGODB_URI`: MongoDB connection URI (e.g., `mongodb://localhost:27017/event_management`)
+Sensitive information like JWT secrets and MongoDB URIs are managed via a .env file.
 
 ## Usage
 
@@ -109,7 +119,7 @@ Use a tool like [Postman](https://www.postman.com/) to interact with the API. Be
 - **Delete Event**
   - **DELETE** `/api/events/:id`
 
-### Participant Management
+### Participant and Waitlist Management
 
 - **Register Participant for Event**
   - **POST** `/api/events/:id/register`
@@ -125,19 +135,19 @@ Use a tool like [Postman](https://www.postman.com/) to interact with the API. Be
   - **GET** `/api/events/:id/spots`
 - **Cancel Participant Registration**
 - **POST** `/api/events/:id/cancel`
-
   ```json
   {
     "email": "johndoe@example.com"
   }
   ```
+- ## Event Search and Filter
+-**Search Events**
+  -**GET** `/api/events/search`
 
 ## Future Enhancements
 
 ```
-
-- Add authentication and authorization to restrict access to certain endpoints.
-- Implement pagination for large lists of events.
-- Add email notifications for participants when they register or cancel.
-- Enhance error handling and validation logic.
+-Improved Search Filter
+-User notification when a user is added from the waitlist to the main list.
+-Enhanced authentication: role based authentication for restricted endpoints.
 ```
